@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+:root {
+  --bg-dark: #030406;
+  --surface-1: #070506;
+  --surface-2: rgba(26, 8, 8, 0.95);
+  --surface-3: rgba(9, 6, 8, 0.98);
+  --radial-top: rgba(127, 29, 29, 0.55);
+  --radial-mid: rgba(20, 7, 7, 0.96);
+  --primary: #ef4444;
+  --secondary: #f97316;
+  --accent: #fb923c;
+  --accent-soft: #fed7aa;
+  --text-main: #ffffff;
+  --text-muted: #94a3b8;
+  --border-main: rgba(249, 115, 22, 0.75);
+  --border-subtle: rgba(239, 68, 68, 0.28);
+  --glow-primary: rgba(239, 68, 68, 0.32);
+  --glow-secondary: rgba(249, 115, 22, 0.45);
+  --btn-text-dark: #090608;
+  --arena-sky-top: #070506;
+  --arena-sky-bot: #3b0a0a;
+  --arena-floor: #140808;
+  --arena-post: #291111;
+  --rope-1: #ef4444;
+  --rope-2: #f97316;
+  --rope-3: #dc2626;
+}
+
+body[data-theme="classic"] {
+  --bg-dark: #050814;
+  --surface-1: #070b18;
+  --surface-2: rgba(15, 23, 42, 0.94);
+  --surface-3: rgba(7, 11, 24, 0.98);
+  --radial-top: rgba(30, 58, 138, 0.55);
+  --radial-mid: rgba(10, 15, 32, 0.96);
+  --primary: #38bdf8;
+  --secondary: #2563eb;
+  --accent: #facc15;
+  --accent-soft: #fef08a;
+  --text-main: #ffffff;
+  --text-muted: #94a3b8;
+  --border-main: rgba(56, 189, 248, 0.72);
+  --border-subtle: rgba(56, 189, 248, 0.26);
+  --glow-primary: rgba(56, 189, 248, 0.28);
+  --glow-secondary: rgba(250, 204, 21, 0.35);
+  --btn-text-dark: #050814;
+  --arena-sky-top: #050814;
+  --arena-sky-bot: #172554;
+  --arena-floor: #0f172a;
+  --arena-post: #1e293b;
+  --rope-1: #38bdf8;
+  --rope-2: #facc15;
+  --rope-3: #2563eb;
+}
+
+body[data-theme="pink_noir"] {
+  --bg-dark: #09090b;
+  --surface-1: #111114;
+  --surface-2: rgba(39, 39, 42, 0.94);
+  --surface-3: rgba(18, 18, 21, 0.98);
+  --radial-top: rgba(157, 23, 77, 0.42);
+  --radial-mid: rgba(24, 24, 27, 0.96);
+  --primary: #f472b6;
+  --secondary: #ec4899;
+  --accent: #fbcfe8;
+  --accent-soft: #fce7f3;
+  --text-main: #fafafa;
+  --text-muted: #a1a1aa;
+  --border-main: rgba(244, 114, 182, 0.72);
+  --border-subtle: rgba(161, 161, 170, 0.32);
+  --glow-primary: rgba(236, 72, 153, 0.3);
+  --glow-secondary: rgba(244, 114, 182, 0.4);
+  --btn-text-dark: #18181b;
+  --arena-sky-top: #09090b;
+  --arena-sky-bot: #3f1d2e;
+  --arena-floor: #18181b;
+  --arena-post: #27272a;
+  --rope-1: #f472b6;
+  --rope-2: #a1a1aa;
+  --rope-3: #db2777;
+}
+
+body[data-theme="violet_teal"] {
+  --bg-dark: #04060c;
+  --surface-1: #070b14;
+  --surface-2: rgba(24, 14, 46, 0.94);
+  --surface-3: rgba(8, 12, 22, 0.98);
+  --radial-top: rgba(109, 40, 217, 0.5);
+  --radial-mid: rgba(12, 16, 30, 0.96);
+  --primary: #a855f7;
+  --secondary: #14b8a6;
+  --accent: #2dd4bf;
+  --accent-soft: #99f6e4;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border-main: rgba(45, 212, 191, 0.72);
+  --border-subtle: rgba(168, 85, 247, 0.32);
+  --glow-primary: rgba(168, 85, 247, 0.3);
+  --glow-secondary: rgba(20, 184, 166, 0.42);
+  --btn-text-dark: #04060c;
+  --arena-sky-top: #04060c;
+  --arena-sky-bot: #1e1b4b;
+  --arena-floor: #09131a;
+  --arena-post: #162232;
+  --rope-1: #a855f7;
+  --rope-2: #2dd4bf;
+  --rope-3: #7c3aed;
+}
+
+body[data-theme="emerald_gold"] {
+  --bg-dark: #040807;
+  --surface-1: #060d0b;
+  --surface-2: rgba(12, 34, 28, 0.95);
+  --surface-3: rgba(6, 15, 12, 0.98);
+  --radial-top: rgba(16, 185, 129, 0.44);
+  --radial-mid: rgba(8, 22, 18, 0.96);
+  --primary: #10b981;
+  --secondary: #f59e0b;
+  --accent: #fbbf24;
+  --accent-soft: #fde68a;
+  --text-main: #f0fdf4;
+  --text-muted: #94a3b8;
+  --border-main: rgba(245, 158, 11, 0.75);
+  --border-subtle: rgba(16, 185, 129, 0.32);
+  --glow-primary: rgba(16, 185, 129, 0.32);
+  --glow-secondary: rgba(245, 158, 11, 0.42);
+  --btn-text-dark: #060d0b;
+  --arena-sky-top: #040807;
+  --arena-sky-bot: #064e3b;
+  --arena-floor: #091512;
+  --arena-post: #132a23;
+  --rope-1: #10b981;
+  --rope-2: #f59e0b;
+  --rope-3: #059669;
+}
+
+body[data-theme="crimson_cyan"] {
+  --bg-dark: #04060b;
+  --surface-1: #05070e;
+  --surface-2: rgba(29, 9, 20, 0.95);
+  --surface-3: rgba(7, 11, 20, 0.98);
+  --radial-top: rgba(225, 29, 72, 0.48);
+  --radial-mid: rgba(10, 14, 26, 0.96);
+  --primary: #e11d48;
+  --secondary: #06b6d4;
+  --accent: #22d3ee;
+  --accent-soft: #a5f3fc;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border-main: rgba(6, 182, 212, 0.75);
+  --border-subtle: rgba(225, 29, 72, 0.32);
+  --glow-primary: rgba(225, 29, 72, 0.32);
+  --glow-secondary: rgba(6, 182, 212, 0.42);
+  --btn-text-dark: #05070e;
+  --arena-sky-top: #05070e;
+  --arena-sky-bot: #4c0519;
+  --arena-floor: #090e1a;
+  --arena-post: #171e31;
+  --rope-1: #e11d48;
+  --rope-2: #06b6d4;
+  --rope-3: #be123c;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  user-select: none;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  width: 98vw;
+  height: 96vh;
+  position: relative;
+  border: 2.5px solid var(--border-main);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 0 75px var(--glow-primary), inset 0 0 48px rgba(0, 0, 0, 0.9);
+  background: var(--surface-1);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.screen {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 18%, var(--radial-top) 0%, var(--radial-mid) 58%, var(--bg-dark) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 28px;
+  z-index: 20;
+  overflow-y: auto;
+  transition: background 0.25s ease;
+}
+
+.title-gradient {
+  font-weight: 900;
+  background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.15;
+  filter: drop-shadow(0 2px 12px var(--glow-primary));
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes cinemaGlow {
+  0%, 100% { box-shadow: 0 10px 28px rgba(0, 0, 0, 0.78), 0 0 18px var(--glow-primary); }
+  50% { box-shadow: 0 14px 36px rgba(0, 0, 0, 0.88), 0 0 28px var(--glow-secondary); }
+}
+
+.player-panel-glow {
+  animation: cinemaGlow 4.5s ease-in-out infinite;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AREN-LEGENG ساحة الأساطير",
+  "description": "لعبة قتال ثنائية الأبعاد تجمع بين رسوميات AREN-LEGENG المميزة ومميزات ARENA LEGEND السينمائية: 9 أبطال بنسختي ذكر وأنثى، 36 زياً، 6 أوضاع ألوان، 6 حلبات، 8 أنماط لعب، وعرض الشخصيات السينمائي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
